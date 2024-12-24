@@ -1,5 +1,279 @@
+.dm-sans-uniquifier {
+	font-family: 'DM Sans', serif;
+	font-optical-sizing: auto;
+	font-weight: weight;
+	font-style: normal;
+}
+
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+}
+
+.container {
+	max-width: 1440px;
+	margin: 0 auto;
+}
+
+body {
+	background-color: #161513;
+	color: white;
+	overflow-x: hidden;
+	font-family: DM Sans;
+}
+
+header {
+	background-color: #222222;
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	padding: 0 22%;
+}
+
+.header img {
+	width: 80px;
+	height: 80px;
+}
+
+.header-right {
+	display: flex;
+	gap: 71px;
+}
+
+.header-right a {
+	font-size: 15px;
+	font-weight: 600;
+	text-decoration: none;
+	color: white;
+	cursor: pointer;
+	margin-top: 31px;
+}
+
+.header-right a:hover {
+	color: rgb(202, 226, 226);
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.ava {
+	width: 251px;
+	height: 223px;
+	margin-top: 97px;
+}
+
+h1 {
+	font-size: 45px;
+	font-weight: 900;
+	color: white;
+	margin-top: 40px;
+}
+
+main h3 {
+	font-size: 35px;
+	font-weight: 700;
+	margin-top: 10px;
+	color: rgb(175, 60, 121);
+}
+
+main button {
+	border-radius: 50px;
+	border: 1px;
+	padding: 16px 30px;
+	cursor: pointer;
+	font-size: 21.38px;
+	font-weight: 500;
+	margin-top: 40px;
+	background-color: white;
+}
+
+main button:hover {
+	background-color: rgb(237, 236, 236);
+}
+
+.experience h2 {
+	font-size: 25px;
+	font-weight: 600;
+	color: #c5c5c5;
+	text-align: center;
+	margin-top: 88px;
+}
+
+.langs {
+	display: flex;
+	gap: 5%;
+	justify-content: center;
+	margin-top: 48px;
+}
+
+.langs img {
+	width: 42px;
+	height: 42px;
+	cursor: pointer;
+	transition: all 0.5s ease;
+}
+
+.langs img:hover {
+	transform: scale(1.1);
+	transition: all 0.5s ease;
+}
+
+.projects h2 {
+	font-size: 35px;
+	font-weight: 800;
+	color: #ff8660;
+	margin-top: 99px;
+}
+
+.projects {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.companies {
+	display: flex;
+	justify-content: center;
+	gap: 5%;
+	margin-top: 36px;
+}
+
+.first {
+	transition: all 0.5s ease;
+	cursor: pointer;
+}
+
+.first:hover {
+	transform: scale(1.1);
+	transition: all 0.5s ease;
+}
+
+.first img {
+	width: 390px;
+	height: 235px;
+	border-radius: 18px 18px;
+}
+
+.first h3 {
+	font-size: 24px;
+	font-weight: 800;
+	margin-top: 10px;
+	text-align: center;
+}
+
+.projects button {
+	margin-bottom: 100px;
+
+	border-radius: 50px;
+	border: 1px;
+	padding: 16px 30px;
+	cursor: pointer;
+	font-size: 21.38px;
+	font-weight: 500;
+	margin-top: 40px;
+	background-color: white;
+}
+
+.projects button:hover {
+	background-color: rgb(237, 236, 236);
+}
+
+.contact h2 {
+	font-size: 23.53px;
+	font-weight: 700;
+}
+
+.footer {
+	display: flex;
+	justify-content: space-between;
+}
+
+.google {
+	display: flex;
+	margin-top: 22px;
+}
+
+.google img {
+	width: 16.51px;
+	height: 16.51px;
+}
+
+.google p {
+	font-size: 14.12px;
+	font-weight: 600;
+	margin-left: 5px;
+}
+
+.contact a {
+	text-decoration: none;
+	color: white;
+}
+
+h5 {
+	margin-top: 18px;
+}
+
+.webs img {
+	width: 55px;
+	height: 55px;
+	cursor: pointer;
+	transition: all 0.5s ease;
+}
+
+.webs img:hover {
+	transform: scale(1.1);
+	transition: all 0.5s ease;
+}
+
+.webs {
+	display: flex;
+	gap: 20px;
+	margin-top: 30px;
+}
+
+footer {
+	background-color: #191919;
+	padding: 80px 22% 50px;
+}
+
+@media (max-width: 900px) {
+	.companies {
+		flex-direction: column;
+	}
+
+	.first {
+		margin-top: 40px;
+	}
+
+	.footer {
+		flex-direction: column;
+	}
+
+	.webs {
+		margin-top: 50px;
+	}
+
+	.header {
+		padding: 0 20px;
+	}
+
+	.header-right {
+		gap: 20px;
+	}
+}
+
+@media (max-width: 450px) {
+	.header-right {
+		display: none;
+	}
+
+	.header {
+		padding: 0 0 0 0;
+	}
 }
